@@ -1,3 +1,37 @@
-export default function DonationForm() {
-  return null;
+function DonationForm(props) {
+  const {donations} = props;
+  let count = 1;
+  donations.forEach(donation => count++)
+
+  return (
+  
+    <>
+      <section className="donation">
+        <h3>You could be donation <span className="secondary">#{count}!</span></h3>
+        <form>
+          <label htmlFor="name"
+            >Name<input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Your name..." /></label
+          ><label htmlFor="caption"
+            >Caption<input
+              id="caption"
+              name="caption"
+              type="text"
+              placeholder="Add a brief message..." /></label
+          ><label htmlFor="amount"
+            >Amount<input
+              id="amount"
+              name="amount"
+              type="number"
+              placeholder="0" /></label
+          ><button>Donate!</button>
+        </form>
+      </section>
+    </>
+  );
 }
+
+export default DonationForm;
