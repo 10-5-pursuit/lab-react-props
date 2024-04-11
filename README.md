@@ -38,11 +38,11 @@ Pass props through multiple components to build a mockup of a "FundMe"-type webs
 
 1. Deploy this application to Netlify and add the link to your netlify site below:
 
-- [MY LIVE SITE URL]()
+- [MY LIVE SITE URL](https://lab-react-props-jo.netlify.app/)
 
 ## Instructions
 
-Inside of the `App.js` file are two variables which will serve as props for your application:
+Inside of the `App.jsx` file are two variables which will serve as props for your application:
 
 1. `targetAmount`: A number, in dollars, that represents the total amount of money attempting to be raised.
 
