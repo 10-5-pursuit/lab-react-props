@@ -1,0 +1,7 @@
+.progress {
+  margin-bottom: 25px;
+}
+
+.secondary {
+  color: var(--secondary);
+}
