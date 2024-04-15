@@ -1,10 +1,8 @@
-export default function DonationForm(props) {
-  const {donations} = props;
-  let count = 1;
-  donations.forEach(donation => count++)
-return (
+export default function DonationForm( { count }) {
+
+  return (
     <section className="donation">
-      <h3>You could be donation <span className="secondary">#{count}!</span></h3>
+      <h3>You could be donation <span className="secondary">#{count+ 1}!</span></h3>
       <form>
         <label htmlFor="name">
           Name<input 
@@ -25,7 +23,7 @@ return (
           /></label>
       </form>
     </section>
-  );
+  )
 }
 
 

@@ -46,8 +46,8 @@ function App() {
       <main className="container">
         <section className="sidebar"><RecentDonations donations={donations} /></section>
         <section className="">
-          <Progress amount={donations.map((donation) => donation.amount)} />
-         <DonationForm donations={donations}/>
+          <Progress donations={donations} target={targetAmount} />
+         <DonationForm count={donations.length}/>
         </section>
       </main>
     </>
