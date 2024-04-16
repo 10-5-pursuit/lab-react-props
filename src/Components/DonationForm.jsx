@@ -9,18 +9,19 @@ export default function DonationForm( { count }) {
           id="name"
           name="name"
           placeholder="Your name..." /></label>
-          <label htmlFor="caption">Caption <input 
+          <label html For="caption">Caption <input 
             id="caption"
             name="caption"
             type="text"
             placeholder="Add a brief message..."
           /></label>
-          <label htmlFor="amount">Amount <input
+          <label html For="amount">Amount <input
             id="amount"
             name="amount"
             type="number"
             placeholder="0"
           /></label>
+          <button>Donate!</button>
       </form>
     </section>
   )
