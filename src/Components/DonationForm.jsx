@@ -10,7 +10,5 @@ export default function DonationForm({totalAmtOfPeople}) {
     <button>Donate!</button>
   </form>
     </section>
-
-
   )
 }
