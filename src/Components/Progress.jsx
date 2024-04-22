@@ -1,3 +1,5 @@
+
+
 function Progress({ totalDonations, targetAmount }) {
   return (
     <section className="progress">

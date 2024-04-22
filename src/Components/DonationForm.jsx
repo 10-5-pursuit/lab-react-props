@@ -8,7 +8,8 @@ export default function DonationForm({ totalDonations }) {
         <label htmlFor="name">Name
           <input id="name" name="name" type="text" placeholder="Your name..." />
         </label>
-        <label htmlFor="caption">Caption
+        <label htmlFor="caption">
+          Caption
           <input id="caption" name="caption" type="text" placeholder="Add a brief message..." />
         </label>
         <label htmlFor="amount">Amount
