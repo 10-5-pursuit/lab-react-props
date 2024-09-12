@@ -1,5 +1,10 @@
+// ./scr/App.jsx
+
 import React from "react";
-import TopBar from "./Components/TopBar";
+import TopBar from "./Components/topBar/TopBar";
+import RecentDonations from "./Components/recentDonations/RecentDonations";
+import Progress from "./Components/progress/Progress";
+import DonationForm from "./Components/donationForm/DonationForm";
 import "./App.css";
 
 const targetAmount = 1000;
@@ -41,10 +46,12 @@ function App() {
     <>
       <TopBar />
       <main className="container">
-        <section className="sidebar">{/* Recent Donations */}</section>
+        <section className="sidebar">
+          <RecentDonations donations={donations} />
+        </section>
         <section className="">
-          {/* Progress */}
-          {/* Donation Form */}
+          <Progress donations={donations} target={targetAmount} />
+          <DonationForm nDonations={donations.length} />
         </section>
       </main>
     </>
